@@ -17,7 +17,7 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
         const newDiv = document.createElement('div');
         newDiv.textContent = `Floor ${i}`;
         newDiv.classList.add("floor-container");
-        document.getElementById('container').appendChild(newDiv);
+        document.getElementById('resultDivs').appendChild(newDiv);
 
         const upButton = document.createElement('button');
       upButton.textContent = 'Up';
@@ -36,9 +36,12 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
         const newDiv = document.createElement('div');
         newDiv.textContent = `Lift ${i}`;
         newDiv.classList.add("lift");
-        document.getElementById('container').appendChild(newDiv);
+        document.getElementById('lift-con').appendChild(newDiv);
       }
     } else {
       alert('Please enter valid values. Floor and Lift values should be greater than 0.');
     }
   });
+function reset(){
+  window.location.reload();
+}

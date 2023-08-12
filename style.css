@@ -5,8 +5,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: max-content;
     width: 100%;
+    position: relative;
 }
 .container{
     height: 100vh;
@@ -58,7 +59,6 @@ body{
     justify-content: start;
     display: flex;
     align-items: center;
-    display: none;
 }
 .btn-con{
     display: flex;
@@ -78,4 +78,16 @@ body{
     background-color: grey;
     height: 150px;
     margin: 0 10px;
+}
+#lift-con{
+    display: flex;
+    padding: 0 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#resultDivs{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 }
