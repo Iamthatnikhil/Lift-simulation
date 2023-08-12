@@ -5,7 +5,7 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
     const liftValue = parseInt(document.getElementById('lift').value);
   
     // Check if both values are valid (greater than 0)
-    if (floorValue > 0 && liftValue > 0) {
+    if (floorValue > 0 && floorValue<11 && liftValue > 0 && liftValue <10) {
       // Clear previous divs, if any
       document.getElementById('container').innerHTML = '';
       document.getElementById('container').style.display = 'none';
@@ -38,7 +38,10 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
         newDiv.classList.add("lift");
         document.getElementById('lift-con').appendChild(newDiv);
       }
-    } else {
+    } else if(floorValue > 10 && liftValue > 10){
+      alert('Enter Number less than 10')
+    }
+     else {
       alert('Please enter valid values. Floor and Lift values should be greater than 0.');
     }
   });
