@@ -1,0 +1,81 @@
+body{
+    background: #effff6;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 30px;
+}
+.container .back-btn{
+    width: 10%;
+    display: none;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 217, 217);
+    box-shadow: 3px 3px 50px 0 rgb(178, 199, 202);
+    
+
+}
+
+.inputs input{
+    padding: 10px;
+    background: #f0eded;
+    border-radius: 5px;
+    font-size: 16px;
+   
+}
+.inputs button{
+    width: 40%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #484b4b;
+    color: white;
+}
+.floor-container{
+    width: 100%;
+    border: 1px solid grey;
+    height: 200px;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.btn-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    width: 5%;
+}
+#lifts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.lift{
+    width: 100px;
+    background-color: grey;
+    height: 150px;
+    margin: 0 10px;
+}
